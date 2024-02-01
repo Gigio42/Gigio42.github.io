@@ -3,29 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+    <title>Seu Nome - Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Este é um site simples hospedado no GitHub Pages.</p>
+    <header>
+        <h1>Seu Nome</h1>
+        <p>Desenvolvedor Web</p>
+    </header>
 
-    <script>
-        // Exemplo de JavaScript
-        document.write("<p>JavaScript está funcionando!</p>");
-    </script>
+    <button id="openSidebar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="sidebar">
+        <button id="option1" class="project">
+            Projetos
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou Seu Nome, um entusiasta da web apaixonado por criar experiências incríveis na web. Com habilidades em HTML, CSS, JavaScript e mais, estou sempre buscando aprender e melhorar minhas habilidades.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec sapien convallis, at commodo ipsum tristique.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="project">
+                <h3>Projeto 2</h3>
+                <p>Outra descrição breve. Suspendisse id sollicitudin ligula. Curabitur vel neque a dui condimentum venenatis eu non justo.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Se você deseja entrar em contato comigo para oportunidades de colaboração ou para simplesmente bater um papo, sinta-se à vontade para me enviar um e-mail em <a href="mailto:seuemail@example.com">seuemail@example.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
