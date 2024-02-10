@@ -1,0 +1,36 @@
+{
+  "name": "gigio42-website",
+  "version": "1.0.0",
+  "description": "My own portifolio website.",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gigio42/Gigio42.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "portifolio"
+  ],
+  "author": "Gigio42",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gigio42/Gigio42.github.io/issues"
+  },
+  "homepage": "https://github.com/Gigio42/Gigio42.github.io#readme",
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.2",
+    "ev-emitter": "^2.1.2",
+    "fizzy-ui-utils": "^3.0.0",
+    "get-size": "^3.0.0",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1",
+    "masonry-layout": "^4.2.2",
+    "outlayer": "^2.1.1",
+    "require": "^2.4.20",
+    "three": "^0.161.0",
+    "three-nebula": "^10.0.3"
+  }
+}
