@@ -1,10 +1,4 @@
-/**
-* Template Name: iPortfolio
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -143,6 +137,27 @@
   }
 
   /**
+   * Facts linux typed
+   */
+  document.addEventListener("DOMContentLoaded", function() {
+    const waypoint = new Waypoint({
+      element: document.getElementById('facts'),
+      handler: function(direction) {
+        if (direction === 'down') {
+          const typed = new Typed('#archLinuxText', {
+            strings: ['Arch'],
+            typeSpeed: 500,
+            showCursor: false 
+          });
+          
+          waypoint.destroy();
+        }
+      },
+      offset: 'bottom-in-view'
+    });
+  });
+
+  /**
    * Skills animation
    */
   let skilsContent = select('.skills-content');
@@ -214,35 +229,6 @@
   });
 
   /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -261,4 +247,8 @@
 
 })()
 
+window.addEventListener('load', function () {
+    var audio = document.getElementById('audioPlayer');
+    audio.play();
+});
 

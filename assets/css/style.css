@@ -215,7 +215,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #ffffff;
+  color: #ab2727;
 }
 
 /* Mobile Navigation */
@@ -293,7 +293,7 @@ h6 {
 #hero p span {
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid hsl(0, 0%, 100%);
+  border-bottom: 3px solid hsl(0, 100%, 50%);
 }
 
 @media (max-width: 768px) {
@@ -401,11 +401,16 @@ section {
 
 .facts .count-box i {
   display: block;
-  font-size: 44px;
+  font-size: 110px;
   color: #dd1414;
   float: left;
   line-height: 0;
+
+  font-style: normal !important;
+  transform: none !important;
 }
+
+
 
 .facts .count-box span {
   font-size: 48px;
@@ -518,7 +523,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #ff636380;
+  background: #bfbfbf;
   color: #000000;
   padding: 5px 15px;
   display: inline-block;
@@ -562,7 +567,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #e00404;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -570,19 +575,24 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  padding: 15px 50px 8px 50px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
-  margin-bottom: 5px;
+  color: #997e7e;
+  background-color: #8d0000;
+  border-radius: 50px;
+  margin-bottom: 6px;
+  margin-top: 6px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  background-color: #570000;
+  border-radius: 50px;
+  color: #ffffff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -598,7 +608,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 0;
   right: 0;
@@ -625,13 +635,13 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: rgba(221, 20, 20, 0.75);
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(221, 20, 20, 0.95);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
@@ -672,11 +682,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #dd1414;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #dd1414;
 }
 
 .portfolio-details .portfolio-info {
@@ -767,16 +777,31 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #140404;
+  color: #f4f6fd;
+  font-size: 14px;
 }
+
+#footer .container {
+  text-align: center;
+}
+
+#footer audio {
+  background-color: #ff0000;
+  display: block;
+  margin: auto; /* Centraliza horizontalmente o player de áudio */
+  padding: 0; /* Removendo padding */
+  width: 100%; /* Garante que o player de áudio tenha a largura correta */
+  box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do elemento */
+}
+
+
+
 
 #footer .copyright {
   text-align: center;

@@ -33,7 +33,7 @@ for (let i = 0; i < particleCount; i++) {
 
     positions[i * 3] = Math.cos(angle) * radius;
     positions[i * 3 + 1] = Math.sin(angle) * radius;
-    positions[i * 3 + 2] = (Math.random() - 0.5) * 300;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
     
 
     // Velocidades tangenciais circulares para manter as partículas orbitando
@@ -65,7 +65,7 @@ scene.add(particleSystem);
 //---------------------------------------------------------------------------------------------------
 
 // Limitando a distância máxima das partículas do centro
-const maxDistance = 40;
+const maxDistance = 60;
 
 // Função de animação
 function animate() {
@@ -110,7 +110,7 @@ function animate() {
         if (i % 100 === 0) {
             const hueShift = 0.001; // Ajuste de mudança de cor
             for (let j = i; j < i + 100 && j < particleCount; j++) {
-                const hue = (colorAttribute.array[j * 3] + hueShift) % 1; // Rotaciona o componente de matiz
+                const hue = (colorAttribute.array[j * 3] + hueShift) % 4; // Rotaciona o componente de matiz
                 colorAttribute.array[j * 3] = hue;
             }
         }
