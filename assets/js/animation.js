@@ -123,4 +123,3 @@ function animate() {
 }
 
 animate();
-

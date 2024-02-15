@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #ed3737;
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #ec2e2e;
   color: #fff;
 }
 
@@ -94,8 +94,12 @@ h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 5px solid #000000;
+  width: 150px;
+  border: 5px solid;
+ 
+  border-radius: 0%;
+  border-image: linear-gradient(135deg,#aa0000, #7e000076, #900000) 1;
+  animation: gradientAnimation 2s infinite alternate ease-in-out;
 }
 
 #header .profile h1 {
@@ -111,32 +115,6 @@ h6 {
 #header .profile h1 a,
 #header .profile h1 a:hover {
   color: #fff;
-  text-decoration: none;
-}
-
-#header .profile .social-links a {
-  font-size: 40px;
-  display: inline-block;
-  background: #000000ae;
-  color: #a01b1b;
-  line-height: 1;
-  margin-right: 1px;
-  margin-bottom: 10px;
-  border-radius: 10%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#header .profile .social-links a i {
-  font-style: normal !important;
-  transform: none !important;
-}
-
-#header .profile .social-links a:hover {
-  background: #a01b1b;
-  color: #000000;
   text-decoration: none;
 }
 
@@ -215,7 +193,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #ab2727;
+  color: #ff000088;
 }
 
 /* Mobile Navigation */
@@ -228,7 +206,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #dd1414;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -326,7 +304,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #c21616;
+  color: #ff7300;
 }
 
 .section-title h2::after {
@@ -350,7 +328,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #d63d13;
+  color: #ff7300;
 }
 
 .about .content ul {
@@ -371,7 +349,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ff0000;
+  color: #ff7300;
   line-height: 0;
 }
 
@@ -568,7 +546,7 @@ section {
   list-style: none;
   text-align: center;
   background: #e00404;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 2px 15px;
 }
 
@@ -582,7 +560,7 @@ section {
   text-transform: uppercase;
   color: #997e7e;
   background-color: #8d0000;
-  border-radius: 50px;
+  border-radius: 10px;
   margin-bottom: 6px;
   margin-top: 6px;
   transition: all 0.3s ease-in-out;
@@ -591,7 +569,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   background-color: #570000;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #ffffff;
 }
 
@@ -731,7 +709,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: #a30606;
 }
 
 .breadcrumbs h2 {
@@ -782,7 +760,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #140404;
+  background: #5d000000;
   color: #f4f6fd;
   font-size: 14px;
 }
@@ -800,6 +778,31 @@ section {
   box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do elemento */
 }
 
+#footer .social .social-links a {
+  font-size: 40px;
+  display: inline-block;
+  background: #000000b1;
+  color: #b41818;
+  line-height: 1;
+  margin-right: 2px;
+  margin-bottom: 15px;
+  border-radius: 10%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+
+#footer .social .social-links a i {
+  font-style: normal !important;
+  transform: none !important;
+}
+
+#footer .social .social-links a:hover {
+  background: #a01b1b;
+  color: #000000;
+  text-decoration: none;
+}
 
 
 
